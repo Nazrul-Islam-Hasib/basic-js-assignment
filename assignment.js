@@ -1,3 +1,5 @@
+// https://github.com/Nazrul-Islam-Hasib/basic-js-assignment
+
 function kilometerToMeter(kilometer){
     //Input Validation
     if(typeof kilometer != 'number' || kilometer <= 0){
@@ -72,8 +74,8 @@ function hotelCost(noOfDays){
 
 function megaFriend(nameList){
     var biggestName = '';
-    //Checking if the input paramaeter is an Array
-    if(Array.isArray(nameList) == false){
+    //Checking if the input paramaeter is an Array or empty
+    if(Array.isArray(nameList) == false || nameList.length == 0){
         return 'Please enter an array of names as input';
     }
     else{
