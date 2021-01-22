@@ -71,19 +71,20 @@ function hotelCost(noOfDays){
 
 
 function megaFriend(nameList){
+    var biggestName = '';
     //Checking if the input paramaeter is an Array
     if(Array.isArray(nameList) == false){
         return 'Please enter an array of names as input';
     }
     else{
-        var biggestName = '';
         for (let index = 0; index < nameList.length; index++) {
             //Checking if the Array contains only string
             if(typeof nameList[index] != "string") {
                 return 'Please enter only string of array as an Input';
               }
+            //Calculating biggest name
             else{
-                if (biggestName.length > nameList[index].length) {
+                if (biggestName.length >= nameList[index].length) {
                     biggestName = biggestName;
                 } else {
                     biggestName = nameList[index];
